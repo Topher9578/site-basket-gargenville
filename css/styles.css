@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://font.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+*{
+  font-family: 'Montserrat';
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Tête de Page */
+
+header.header {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+header.header img {
+  width: 150px;
+  margin-left: 50px;
+}
+
+section.top-page{
+  background: url('../images/gym.jpg');
+  background-size: cover;
+  height: 80vh;
+  padding: 25px;
+}
+
+/* Page de Bienvenue (landing page) */
+
+.landing-page{
+  padding:20px 50px;
+}
+
+.big-title{
+  margin-top: 120px;
+  color: white;
+  font-family:'Abril Fatface';
+  font-size: 80px;
+  width:40% ;
+}
+
+.span-bigtitle {
+  color: green;
+  font-family: 'Abril Fatface' ;
+}
+
+.scroll-down{
+  color: green;
+  text-decoration: none;
+  position: absolute;
+  bottom: 160px;
+  font-weight: bold;
+}
+
+/* Menu de Navigation */
+
+nav.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 400px;
+  margin-left: 30px;
+}
+
+nav.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Réseaux Sociaux */
+
+.socialnetwork{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.socialnetwork-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socialnetwork-name {
+  font-weight: 700;
+  width: 200px;
+  text-align: center;
+}
+
+img {
+	width: 80px;
+	height: auto;
+}
+
+
+/* Nos équipes */
+
+.section-title {
+  font-size: 50px;
+  font-family: 'Abril Fatface';
+  font-weight: 100;
+  position: relative;
+}
+
+.section-title::before {
+  content:"";
+  position: absolute;
+  background-color:green;
+  width: 35px;
+  height: 7px;
+  bottom: 0;
+}
+
+.teams{
+  margin:100px;
+}
+
+.our-teams {
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.no-grid{
+  min-width: 350px;
+  height: 500px;
+  flex: 1;
+}
+
+.team1{
+  background-image: url(../images/nos_équipes/senmasc.jpg);
+}
+
+.team2{
+  background-image: url(../images/nos_équipes/senfem.jpg);
+}
+
+.team3{
+  background-image: url(../images/nos_équipes/u20.jpg);
+}
+
+.team4{
+  background-image: url(../images/nos_équipes/u13.jpg);
+}
+
+.team-details{
+  background-color: #FFFFFFDF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.team-name{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 3px;
+}
+
+.coach{
+  color:green;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 3px;
+}
+
+/* Notre boutique */
+ 
+.store{
+  margin: 100px;
+}
+
+.item-grid{
+  display: grid;
+  min-height: 150vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 400px);
+}
+
+.item-grid1{
+  background-image: url(../images/nos_items/1.png);
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.item-grid2{
+  background-image: url(../images/nos_items/2.png);
+  grid-column: 3/5;
+}
+
+.item-grid3{
+  background-image: url(../images/nos_items/3.png);
+  grid-column: 3/5;
+}
+
+.item-grid4{
+  background-image: url(../images/nos_items/4.png);
+  grid-column: 1;
+  grid-row: 3/5;
+}
+
+.item-grid5{
+  background-image: url(../images/nos_items/Sans\ titre.png);
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+
+.item-grid6{
+  background-image: url(../images/nos_items/6.png);
+  grid-column: 4;
+  grid-row:3/5;
+}
+
+.item-name{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 3px;
+}
+
+.item-price{
+  color: green;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 3px;
+}
+
+.item-details{
+  background-color: #FFFFFFDF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 20px;
+}
+
+  /* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  margin: 20px 100px;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+footer a.cgv{
+  text-decoration: none;
+  color: black;
+}
